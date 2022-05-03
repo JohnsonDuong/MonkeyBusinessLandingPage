@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 36px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding-bottom: 50px;
+  background-color: #c19a6b;
+  padding-left: 20px;
+  color: aliceblue;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  padding: 0px;
+}
+
+li {
+  font-size: 18px;
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  background-color: #c19a6b;
+  color: aliceblue;
+  padding: 75px 125px;
+}
+
+.info-text {
+  margin: 25px;
+  max-width: 400px;
+  text-align: left;
+}
+
+.info-photo {
+  width: 500px;
+  height: 325px;
+}
+
+.profile-pics {
+  width: 150px;
+  height: 150px;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  padding: 0px 125px;
+  margin-bottom: 25px;
+}
+
+.card {
+  margin: 0px 25px;
+}
+
+.quote {
+  background-color: grey;
+  padding: 75px 300px;
+  font-size: 20px;
+}
+
+.sign-up {
+  background-color: white;
+  margin: 100px 150px;
+  padding: 75px;
+}
+
+.footer {
+  background-color: #c19a6b;
+  padding: 25px;
+}

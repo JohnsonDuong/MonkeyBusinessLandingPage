@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -10,16 +14,20 @@ body {
   background-blend-mode: multiply;
 }
 
-.header {
+#header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 36px;
   font-family: "Luckiest Guy", cursive;
-  padding-bottom: 50px;
   color: white;
   text-shadow: 2px 2px #00782c;
   padding-left: 20px;
+  position: sticky;
+  top: 0;
+  background-color: #0d3e0a43;
+  background-image: url("images/jungle.jpeg");
+  background-blend-mode: multiply;
 }
 
 ul {
@@ -78,7 +86,7 @@ button:hover {
   margin: 0px;
 }
 
-.info {
+#info {
   display: flex;
   justify-content: center;
   padding: 75px 125px;
@@ -113,7 +121,7 @@ button:hover {
   border-width: 3px;
 }
 
-.team-header {
+#team-header {
   background-color: white;
   padding: 20px;
   margin: 0px;
@@ -192,7 +200,7 @@ button:hover {
   margin: 0px;
 }
 
-.contact-background {
+#contact-background {
   background-color: white;
   margin: 0px;
   padding: 0px;
@@ -233,5 +241,18 @@ button:hover {
 }
 .footer {
   padding: 25px;
+  color: white;
+}
+
+.header-link {
+  text-decoration: none;
+}
+
+.header-link:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a {
   color: white;
 }

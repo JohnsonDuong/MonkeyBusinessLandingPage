@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Monkey Business</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
     <link href="styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,16 +15,30 @@
     />
   </head>
   <body>
-    <div class="header">
-      Monkey Business
+    <div id="header">
+      <a
+        href="javascript:window.scrollTo(0,0).location.reload();"
+        class="header-link"
+        >Monkey Business</a
+      >
       <ul>
-        <button>About</button>
-        <button>Team</button>
-        <button>Contact</button>
+        <button onClick="document.getElementById('info').scrollIntoView();">
+          About
+        </button>
+        <button
+          onClick="document.getElementById('team-header').scrollIntoView();"
+        >
+          Team
+        </button>
+        <button
+          onClick="document.getElementById('contact-background').scrollIntoView();"
+        >
+          Contact
+        </button>
       </ul>
     </div>
 
-    <div class="info">
+    <div id="info">
       <div class="info-text">
         <h1 class="about">Welcome!</h1>
         <p>
@@ -38,7 +53,7 @@
         alt="Group Monkey Selfie"
       />
     </div>
-    <h1 class="team-header">Meet the Team</h1>
+    <h1 id="team-header">Meet the Team</h1>
     <div class="team">
       <div class="card">
         <img class="profile-pics" src="./images/Jeff.jpeg" alt="Jeff" />
@@ -67,7 +82,7 @@
       <p class="special-quote">"HOO HOO HAH OOO OO AAA AAAA!!"</p>
       <p class="quote-sayer">-MONKE</p>
     </div>
-    <div class="contact-background">
+    <div id="contact-background">
       <div class="contact">
         <div class="contact-container">
           <h1 class="contact-header">Interested in our services?</h1>
@@ -76,9 +91,19 @@
             button right over there!
           </p>
         </div>
-        <button class="contact-button">Email us</button>
+        <button
+          class="contact-button"
+          onClick=" window.open('https://www.youtube.com/shorts/Jj9G27MqGVk','_blank')"
+        >
+          Email us
+        </button>
       </div>
     </div>
-    <div class="footer">Webpage by: Johnson Duong</div>
+    <div class="footer">
+      Webpage by:
+      <a href="https://github.com/JohnsonDuong" target="_blank"
+        >Johnson Duong</a
+      >
+    </div>
   </body>
 </html>
